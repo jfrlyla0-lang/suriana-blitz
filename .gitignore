@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+server/uploads/
+app/dist/
+.DS_Store
+*.backup*
+*.log
+_before_security_migration_*/
+_SECURITY_MIGRATION_BACKUP_*/

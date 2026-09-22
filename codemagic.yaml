@@ -1,0 +1,17 @@
+workflows:
+  ionic-capacitor-android:
+    name: Build Suriana APK
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      node: latest
+      java: 17
+    scripts:
+      - name: Install dependencies and build
+        script: |
+          cd app && npm install && npx vite build && npx cap sync
+      - name: Build Android APK
+        script: |
+          cd app/android && ./gradlew assembleDebug
+    artifacts:
+      - app/android/app/build/outputs/apk/debug/*.apk

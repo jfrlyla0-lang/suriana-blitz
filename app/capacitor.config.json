@@ -1,0 +1,9 @@
+{
+  "appId": "com.soriana.premium",
+  "appName": "\u0633\u0648\u0631\u064a\u0627\u0646\u0627 Premium",
+  "webDir": "dist",
+  "server": {
+    "url": "https://onrender.com",
+    "cleartext": true
+  }
+}
